@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оренбургский заповедник — Открой Оренбуржье</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" id="logo" aria-label="Открой Оренбуржье">
+      <img src="media/logo.svg" alt="Логотип Открой Оренбуржье" width="180" height="44">
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Открыть меню">
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <nav id="main-nav">
+      <a href="index.html#search-section" id="go-to-search" class="nav-link">Поиск достопримечательностей</a>
+      <a href="catalog.html" id="nav-catalog" class="nav-link">Каталог достопримечательностей</a>
+      <a href="profile.html" id="nav-profile" class="nav-link">Личный кабинет</a>
+      <a href="login.html" id="nav-login" class="btn btn-outline">Войти</a>
+      <a href="register.html" id="nav-register" class="btn btn-primary">Регистрация</a>
+      <a href="index_dark.html" class="theme-btn" title="Переключить тему оформления">🌙 Тёмная</a>
+    </nav>
+  </div>
+</header>
+<main id="landmark-page" class="container section">
+  <h1 id="landmark-name" class="section-title">Оренбургский заповедник (Предуральская степь)</h1>
+
+  <div class="landmark-layout">
+    <div>
+      <div id="landmark-photos" class="css-slider">
+        <input type="radio" name="slider" id="slide-1" checked>
+        <input type="radio" name="slider" id="slide-2">
+        <input type="radio" name="slider" id="slide-3">
+        <div class="slides-wrap">
+          <div class="slide-item slide-1"><img src="https://orencity.ru/assets/images/dosug/tarpaniya/zapovednik_orenburgskiy.jpg" alt="Лошади Пржевальского в Предуральской степи"></div>
+          <div class="slide-item slide-2"><img src="https://nashural.ru/assets/uploads/iILI5yYflUpfuDDVtEJR26Ox56qi5xF6o7S3ycFjzCj_u5IFlva8SFAsPF5Ohf6F8fUkfeSGbuWoHSCUnCG2z3WG0FKvGg.jpg" alt="Панорама Оренбургской степи"></div>
+          <div class="slide-item slide-3"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTT9We9Aa5NE5ZIt-GbsrZ9dJCRm2VzzynJKTxM2R4hNMhrZads" alt="Степные холмы Оренбуржья"></div>
+        </div>
+        <div class="slider-thumbs">
+          <label for="slide-1"><img src="https://orencity.ru/assets/images/dosug/tarpaniya/zapovednik_orenburgskiy.jpg" alt="Миниатюра 1"></label>
+          <label for="slide-2"><img src="https://nashural.ru/assets/uploads/iILI5yYflUpfuDDVtEJR26Ox56qi5xF6o7S3ycFjzCj_u5IFlva8SFAsPF5Ohf6F8fUkfeSGbuWoHSCUnCG2z3WG0FKvGg.jpg" alt="Миниатюра 2"></label>
+          <label for="slide-3"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTT9We9Aa5NE5ZIt-GbsrZ9dJCRm2VzzynJKTxM2R4hNMhrZads" alt="Миниатюра 3"></label>
+        </div>
+      </div>
+
+      <section class="section">
+        <h2>Описание</h2>
+        <p id="landmark-desc">Государственный природный заповедник «Оренбургский» (участок «Предуральская степь») — уникальный природный комплекс, где реализуется первый в России проект по созданию полувольной популяции лошади Пржевальского в естественной степной среде.</p>
+      </section>
+
+      <section id="landmark-comments">
+        <h2>Комментарии путешественников</h2>
+        <div class="comment-card">
+          <strong>Анна Кузнецова</strong> <small>• 14.09.2026</small>
+          <p>Невероятные просторы! Удалось увидеть табун лошадей Пржевальского совсем близко на экологической тропе.</p>
+        </div>
+        <div class="comment-card">
+          <strong>Максим Белов</strong> <small>• 02.10.2026</small>
+          <p>Отличная организация экскурсий, информативные стенды и потрясающие виды на закате.</p>
+        </div>
+        <div class="comment-card">
+          <strong>Светлана Громова</strong> <small>• 21.10.2026</small>
+          <p>Рекомендую записываться на экскурсию заранее через визит-центр. Обязательно берите бинокль!</p>
+        </div>
+      </section>
+    </div>
+
+    <aside>
+      <div class="info-panel">
+        <h2>Справка об объекте</h2>
+        <p id="landmark-cat"><strong>Категория:</strong> Природный объект</p>
+        <p id="landmark-region"><strong>Район:</strong> Беляевский район, Оренбургская область</p>
+        <p id="landmark-coords"><strong>Координаты:</strong> 51.2345° с.ш., 56.1122° в.д.</p>
+        <p id="landmark-info"><strong>Режим работы и стоимость:</strong> Ежедневно с 09:00 до 18:00. Экскурсия по экотропе — от 400 руб.</p>
+      </div>
+
+      <div class="form-box" style="margin-top:20px; max-width:100%;">
+        <h2>Предложить исправление</h2>
+        <form id="correction-form" action="#" method="get">
+          <div class="form-group">
+            <label for="correction-name">Имя пользователя</label>
+            <input type="text" id="correction-name" name="name" class="form-control" placeholder="Ваше имя" required>
+          </div>
+          <div class="form-group">
+            <label for="correction-email">E-mail для обратной связи</label>
+            <input type="email" id="correction-email" name="email" class="form-control" placeholder="you@example.ru" required>
+          </div>
+          <div class="form-group">
+            <label for="correction-type">Тип исправления</label>
+            <select id="correction-type" name="type" class="form-control" required>
+              <option value="desc">Неточность в описании</option>
+              <option value="outdated">Устаревшие данные</option>
+              <option value="coords">Некорректные координаты</option>
+              <option value="photo">Некачественное фото</option>
+              <option value="other">Другое</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="correction-text">Описание предлагаемого исправления</label>
+            <textarea id="correction-text" name="text" rows="4" class="form-control" placeholder="Укажите, какие данные нужно уточнить..." required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="correction-file">Подтверждающее фото</label>
+            <input type="file" id="correction-file" name="file" class="form-control" accept="image/*">
+          </div>
+          <div class="form-group">
+            <label class="checkbox-row">
+              <input type="checkbox" id="correction-consent" name="consent" required>
+              <span>Согласие на обработку персональных данных</span>
+            </label>
+          </div>
+          <button type="submit" id="correction-submit" class="btn btn-primary" style="width:100%;">Отправить</button>
+        </form>
+      </div>
+    </aside>
+  </div>
+</main>
+<footer id="footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>Открой Оренбуржье</h3>
+      <p>Веб-платформа для сбора и представления информации о достопримечательностях Оренбургской области.</p>
+      <p><strong>Телефон:</strong> <a href="tel:88007654321">8-800-765-43-21</a></p>
+      <p><strong>E-mail:</strong> <a href="mailto:info@orenlandmarks.ru">info@orenlandmarks.ru</a></p>
+    </div>
+    <div>
+      <h4>Навигация по сайту</h4>
+      <ul class="footer-nav">
+        <li><a href="index.html">главная</a></li>
+        <li><a href="login.html">вход</a></li>
+        <li><a href="register.html">регистрация</a></li>
+        <li><a href="profile.html">личный кабинет</a></li>
+        <li><a href="catalog.html">каталог достопримечательностей</a></li>
+        <li><a href="landmark.html">страница достопримечательности</a></li>
+        <li><a href="admin.html">административная панель</a></li>
+        <li><a href="index_dark.html">главная - тёмная тема</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

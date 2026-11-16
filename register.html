@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация — Открой Оренбуржье</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" id="logo" aria-label="Открой Оренбуржье">
+      <img src="media/logo.svg" alt="Логотип Открой Оренбуржье" width="180" height="44">
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Открыть меню">
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <nav id="main-nav">
+      <a href="index.html#search-section" id="go-to-search" class="nav-link">Поиск достопримечательностей</a>
+      <a href="catalog.html" id="nav-catalog" class="nav-link">Каталог достопримечательностей</a>
+      <a href="profile.html" id="nav-profile" class="nav-link">Личный кабинет</a>
+      <a href="login.html" id="nav-login" class="btn btn-outline">Войти</a>
+      <a href="register.html" id="nav-register" class="btn btn-primary">Регистрация</a>
+      <a href="index_dark.html" class="theme-btn" title="Переключить тему оформления">🌙 Тёмная</a>
+    </nav>
+  </div>
+</header>
+<main class="container">
+  <div class="form-box">
+    <h1>Регистрация пользователя</h1>
+    <form id="register-form" action="profile.html" method="get">
+      <div class="form-group">
+        <label for="reg-email">E-mail *</label>
+        <input type="email" id="reg-email" name="email" class="form-control" placeholder="name@oren.ru" required>
+        <div class="validation-hints">
+          <span class="hint-empty">Обязательное поле для заполнения</span>
+          <span class="hint-invalid">Некорректный формат E-mail</span>
+          <span class="hint-valid">E-mail заполнен корректно</span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="reg-lastname">Фамилия *</label>
+        <input type="text" id="reg-lastname" name="lastname" class="form-control" placeholder="Иванов" required minlength="2">
+        <div class="validation-hints">
+          <span class="hint-empty">Обязательное поле для заполнения</span>
+          <span class="hint-invalid">Введите минимум 2 символа</span>
+          <span class="hint-valid">Фамилия заполнена корректно</span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="reg-firstname">Имя *</label>
+        <input type="text" id="reg-firstname" name="firstname" class="form-control" placeholder="Иван" required minlength="2">
+        <div class="validation-hints">
+          <span class="hint-empty">Обязательное поле для заполнения</span>
+          <span class="hint-invalid">Введите минимум 2 символа</span>
+          <span class="hint-valid">Имя заполнено корректно</span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="reg-password">Пароль *</label>
+        <input type="password" id="reg-password" name="password" class="form-control" placeholder="Минимум 6 символов" required minlength="6">
+        <div class="validation-hints">
+          <span class="hint-empty">Обязательное поле для заполнения</span>
+          <span class="hint-invalid">Пароль должен содержать от 6 символов</span>
+          <span class="hint-valid">Надёжный пароль</span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="reg-password-confirm">Повтор пароля *</label>
+        <input type="password" id="reg-password-confirm" name="password_confirm" class="form-control" placeholder="Повторите пароль" required minlength="6">
+        <div class="validation-hints">
+          <span class="hint-empty">Обязательное поле для заполнения</span>
+          <span class="hint-invalid">Повторите пароль (от 6 символов)</span>
+          <span class="hint-valid">Поле заполнено корректно</span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="reg-birthdate">Дата рождения (необязательно)</label>
+        <input type="date" id="reg-birthdate" name="birthdate" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="reg-phone">Номер телефона (необязательно)</label>
+        <input type="tel" id="reg-phone" name="phone" class="form-control" placeholder="+7 (900) 000-00-00" pattern="[+0-9\s\-\(\)]{7,20}">
+        <div class="validation-hints">
+          <span class="hint-invalid">Некорректный номер телефона</span>
+          <span class="hint-valid">Номер телефона корректен</span>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="checkbox-row">
+          <input type="checkbox" id="reg-consent" name="consent" required>
+          <span>Согласен на обработку персональных данных *</span>
+        </label>
+      </div>
+      <button type="submit" id="reg-submit" class="btn btn-primary" style="width:100%;">Зарегистрироваться</button>
+    </form>
+  </div>
+</main>
+<footer id="footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>Открой Оренбуржье</h3>
+      <p>Веб-платформа для сбора и представления информации о достопримечательностях Оренбургской области.</p>
+      <p><strong>Телефон:</strong> <a href="tel:88007654321">8-800-765-43-21</a></p>
+      <p><strong>E-mail:</strong> <a href="mailto:info@orenlandmarks.ru">info@orenlandmarks.ru</a></p>
+    </div>
+    <div>
+      <h4>Навигация по сайту</h4>
+      <ul class="footer-nav">
+        <li><a href="index.html">главная</a></li>
+        <li><a href="login.html">вход</a></li>
+        <li><a href="register.html">регистрация</a></li>
+        <li><a href="profile.html">личный кабинет</a></li>
+        <li><a href="catalog.html">каталог достопримечательностей</a></li>
+        <li><a href="landmark.html">страница достопримечательности</a></li>
+        <li><a href="admin.html">административная панель</a></li>
+        <li><a href="index_dark.html">главная - тёмная тема</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личный кабинет — Открой Оренбуржье</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" id="logo" aria-label="Открой Оренбуржье">
+      <img src="media/logo.svg" alt="Логотип Открой Оренбуржье" width="180" height="44">
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Открыть меню">
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <nav id="main-nav">
+      <a href="index.html#search-section" id="go-to-search" class="nav-link">Поиск достопримечательностей</a>
+      <a href="catalog.html" id="nav-catalog" class="nav-link">Каталог достопримечательностей</a>
+      <a href="profile.html" id="nav-profile" class="nav-link">Личный кабинет</a>
+      <a href="login.html" id="nav-login" class="btn btn-outline">Войти</a>
+      <a href="register.html" id="nav-register" class="btn btn-primary">Регистрация</a>
+      <a href="index_dark.html" class="theme-btn" title="Переключить тему оформления">🌙 Тёмная</a>
+    </nav>
+  </div>
+</header>
+<main class="container section">
+  <h1 class="section-title">Личный кабинет автора</h1>
+  <div class="info-panel" style="margin-bottom:24px;">
+    <p><strong>Пользователь:</strong> Алексей Смирнов (alexey@orenlandmarks.ru)</p>
+    <p><strong>Статус:</strong> Краевед / Фотограф</p>
+  </div>
+  <div class="form-box" style="max-width:100%;">
+    <h2>Добавить новую достопримечательность</h2>
+    <form action="catalog.html" method="get">
+      <div class="form-group">
+        <label for="new-title">Название достопримечательности</label>
+        <input type="text" id="new-title" class="form-control" placeholder="Например: Гора Стрельная" required>
+      </div>
+      <div class="form-group">
+        <label for="new-coords">Географические координаты</label>
+        <input type="text" id="new-coords" class="form-control" placeholder="51.1234° с.ш., 55.5678° в.д." required>
+      </div>
+      <div class="form-group">
+        <label for="new-desc">Описание</label>
+        <textarea id="new-desc" rows="4" class="form-control" placeholder="Подробное описание места..." required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="new-photos">Загрузить несколько изображений</label>
+        <input type="file" id="new-photos" class="form-control" multiple accept="image/*">
+      </div>
+      <button type="submit" class="btn btn-primary">Опубликовать объект</button>
+    </form>
+  </div>
+</main>
+<footer id="footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>Открой Оренбуржье</h3>
+      <p>Веб-платформа для сбора и представления информации о достопримечательностях Оренбургской области.</p>
+      <p><strong>Телефон:</strong> <a href="tel:88007654321">8-800-765-43-21</a></p>
+      <p><strong>E-mail:</strong> <a href="mailto:info@orenlandmarks.ru">info@orenlandmarks.ru</a></p>
+    </div>
+    <div>
+      <h4>Навигация по сайту</h4>
+      <ul class="footer-nav">
+        <li><a href="index.html">главная</a></li>
+        <li><a href="login.html">вход</a></li>
+        <li><a href="register.html">регистрация</a></li>
+        <li><a href="profile.html">личный кабинет</a></li>
+        <li><a href="catalog.html">каталог достопримечательностей</a></li>
+        <li><a href="landmark.html">страница достопримечательности</a></li>
+        <li><a href="admin.html">административная панель</a></li>
+        <li><a href="index_dark.html">главная - тёмная тема</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
